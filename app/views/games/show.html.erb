@@ -1,0 +1,5 @@
+<div class="text-center overflow-auto">
+  <h2>Board  <%= @game.name%> </h2>
+  <span>Creator <%= @game.email%> </span>
+  <%= raw generate_board(@game)%>
+</div>

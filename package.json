@@ -1,0 +1,17 @@
+{
+  "name": "minesweeper",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.2.1",
+    "jquery": "^3.5.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "bootstrap": "^5.0.0-alpha1",
+    "popper.js": "^1.16.0",
+    "turbolinks": "^5.2.0",
+    "@rails/activestorage": "^6.0.0"
+  },
+  "version": "0.1.0"
+}

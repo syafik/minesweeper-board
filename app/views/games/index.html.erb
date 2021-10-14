@@ -1,0 +1,31 @@
+<h1 class="display-6 fw-bold">Minesweeper Game</h1>
+<div class="text-end">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBoard">
+    Generate Board
+  </button>
+</div>
+<h3 class="mt-3">Most Recently Generated Boards</h3>
+<%= render partial: "boards" %>
+<%= link_to "view all generated boards", all_boards_games_path, class: 'btn btn-primary' %>
+
+<!-- Modal -->
+<div class="modal fade" id="modalBoard" tabindex="-1" aria-labelledby="modalBoard" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" >Create Board</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="board-form">
+      <%= render "form", game: Game.new %>
+    </div>
+  </div>
+</div>
+
+<%= content_for :javascripts do %>
+<script>
+  $(document).ready(function(){
+    $('#modalBoard').modal('show');
+  });
+</script>
+<% end %>

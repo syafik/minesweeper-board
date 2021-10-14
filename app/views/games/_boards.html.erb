@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Created at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @games.each_with_index do |game, index| %>
+      <tr>
+        <th scope="row"><%= index + 1 %></th>
+        <td><%= link_to game&.name, game, class: 'btn btn-link' %> <%=  %></td>
+        <td><%= game&.email %></td>
+        <td><%= game&.created_at&.strftime('%d/%m/%Y') %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
