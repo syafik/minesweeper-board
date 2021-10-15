@@ -18,5 +18,7 @@ var jQuery = require('jquery')
 global.$ = global.jQuery = jQuery;
 window.$ = window.jQuery = jQuery;
 
+import "../stylesheets/application"
 import "bootstrap/js/dist/modal"
-import '@fortawesome/fontawesome-free/css/all.css';
+import "@fortawesome/fontawesome-free/js/all"
+import "@fortawesome/fontawesome-free/css/all"

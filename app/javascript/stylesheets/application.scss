@@ -1,0 +1,26 @@
+@import "bootstrap";
+@import 'bootstrap/scss/bootstrap';
+
+@import '@fortawesome/fontawesome-free';
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+.box-tile {white-space: nowrap;}
+.box-tile i {font-size: 40px; width: 30px;}
+.box-tile i.fa-square{color: $gray-600}
+.box-tile i.fa-bomb{color: $red}
+.error {color: $red}
